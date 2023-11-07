@@ -9,7 +9,7 @@ function convertToRoman(num) {
    //    6:['I', 1]
    //  };
 
-	const obj = [
+	const obj = {
     ["M", 1000],
     ["CM", 900],
     ["D", 500],
@@ -23,7 +23,7 @@ function convertToRoman(num) {
     ["V", 5],
     ["IV", 4],
     ["I", 1],
-  ];
+	};
 
 	let ans = [];
 	let len = Object.keys(obj).length;
