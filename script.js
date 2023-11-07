@@ -22,6 +22,7 @@ function convertToRoman(num) {
 			num = num - j*k;
 			if (num==4) {
 				ans.push("IV")
+				break;
 			}
 		}
 	}
