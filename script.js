@@ -19,8 +19,8 @@ function convertToRoman(num) {
 			for (let m = 0; m < j; m++) {
 				ans.push(obj[i][0]);
 			}
+			num = num - j*k;
 		}
-		num = num - k;
 	}
 	let str = ans.join("");
 	let romanObj = {};
