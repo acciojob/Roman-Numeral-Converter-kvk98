@@ -20,6 +20,9 @@ function convertToRoman(num) {
 				ans.push(obj[i][0]);
 			}
 			num = num - j*k;
+			if (num==4) {
+				ans.push("IV")
+			}
 		}
 	}
 	let str = ans.join("");
