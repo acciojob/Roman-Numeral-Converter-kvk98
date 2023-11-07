@@ -9,13 +9,13 @@ function convertToRoman(num) {
       6:['I', 1]
     };
 
+	let ans = [];
 	let len = Object.keys(obj).length;
 	for (let i = 0; i < len; i++) {
 		let k = obj[i][1];
 		let l = num/k;
 		if (l>1) {
 			let j = Math.floor(l);
-			let ans = [];
 			for (let m = 0; m < j; m++) {
 				ans.push(obj[i][0]);
 			}
