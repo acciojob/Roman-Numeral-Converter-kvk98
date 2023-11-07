@@ -14,7 +14,7 @@ function convertToRoman(num) {
 	for (let i = 0; i < len; i++) {
 		let k = obj[i][1];
 		let l = num/k;
-		if (l>1) {
+		if (l>=1) {
 			let j = Math.floor(l);
 			for (let m = 0; m < j; m++) {
 				ans.push(obj[i][0]);
@@ -23,7 +23,9 @@ function convertToRoman(num) {
 		num = num - k;
 	}
 	let str = ans.join("");
-	return str;
+	let romanObj = {};
+	return romanObj.roman = str;
+	// return str;
 	// alert(str);
 
   //your code here
